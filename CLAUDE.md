@@ -105,6 +105,7 @@ Le skill si dividono in due gruppi. Le skill globali vengono da **claude-brain**
 | `pricing-teardown` | Audit conversione di una pricing page (10 dimensioni: UX buyer + AI-agent readiness) |
 | `sales-deck-creator` | Deck commerciale cliente (primo meeting / pitch / asset outbound) |
 | `sales-demo-estner` | Preparare demo call con prospect già interessato — 10-step Estner + discovery SPICED + demo loop |
+| `competitor-map-tittarelli` | Dossier standard su un competitor (13 dimensioni, minaccia, refresh). Dossier in `context/competitors/`, il landscape è `competitor-radar.md`. Poi `deep-research-gtm` solo sui primary |
 | `winn-loss` | Dopo 5+ deal chiusi con call registrate: perché vinciamo, perdiamo o andiamo in churn. Sei dimensioni + quattro forze di Moesta. Alimenta ICP, positioning e messaging |
 | `okr-hybrid` | Definire KPI con il cliente (uso interno) |
 | `business-case-builder` | Stima/valutazione di un'opportunità in business case (metodo Tharin) — feature, iniziativa GTM o deliverable cliente |

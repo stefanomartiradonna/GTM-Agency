@@ -29,6 +29,7 @@ Questa skill è la ricerca *rigorosa e multi-fonte*, quando la decisione vale 10
 | Brief veloce su **un prospect** prima dell'outreach | `account-research` (globale) |
 | Analisi **editoriale** long-form di un'azienda per la newsletter | `company-teardown` (globale) |
 | Ricerca **shallow** per popolare il context cliente (30-60 min) | `skills/setup/` |
+| **Dossier standard** su un competitor (13 dimensioni, livello di minaccia, refresh) | `competitor-map-tittarelli` (globale) |
 | Cascata di **dati** per liste outbound | `workflows/enrichment.md` |
 | Audit **homepage/landing** | `saas-homepage-analyzer` (globale) |
 | **Battlecard / feature comparison** vs un competitor | `battlecard` / `pm-go-to-market-competitive-battlecard` (globali) |
@@ -70,6 +71,8 @@ Chiedi con **AskUserQuestion** (salvo l'utente l'abbia già detto):
 | **Other** | Altro | Usa la struttura di prompt generica + il source-priority ladder |
 
 Vedi `references/use-cases.md` per gli scaffold completi e le source-priority dei due pattern. Per audit pagina / feature compare / market expansion → rimanda alle skill globali (vedi box Confine), eventualmente applicando questa metodologia come wrapper.
+
+**Parti dal dossier, se esiste.** Prima di un teardown competitor controlla se c'è già un dossier di `competitor-map-tittarelli` (`clients/[nome]/context/competitors/` o `_agency/context/competitors/`). Se c'è, il teardown parte da lì e approfondisce solo la domanda specifica, senza rifare l'inventario. Se non c'è e il competitor non è ancora classificato, proponi prima il dossier: il teardown profondo conviene sui competitor con minaccia "primary".
 
 **Orchestrazione dentro il teardown competitor**: quando analizzi un competitor, la lettura GTM d'insieme la fai qui, ma per le viste che richiedono profondità **passi la palla alla skill specializzata e reincorpori il risultato come sezione del report** — homepage→`saas-homepage-analyzer`, pricing page→`pricing-teardown`, H1→`b2b-h1-writer`, feature compare→`battlecard`, positioning→`b2b-positioning-diagnostic`, market→`pm-market-research-market-sizing`. La tabella completa di hand-off è nel pattern 2 di `references/use-cases.md`. Distinzione: una richiesta *standalone* ("audita questa homepage") va direttamente alla skill globale; *dentro un teardown* quelle analisi diventano sotto-sezioni orchestrate da qui.
 
