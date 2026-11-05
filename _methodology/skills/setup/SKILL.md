@@ -29,6 +29,9 @@ Ricerca le seguenti fonti nell'ordine:
 4. **Job posting**: cercare su LinkedIn/Indeed per capire stack usato, ruoli in espansione, problemi che stanno risolvendo internamente
 5. **Google News**: notizie recenti, PR, menzioni in media
 6. **G2 / Capterra** (se SaaS): categorie, recensioni, competitor elencati
+7. **Evidenze sui clienti**: pagina clienti, case study, testimonial, loghi in homepage, pagine soluzioni o settori, pagina integrazioni. Sono la base della bozza ICP.
+
+Per ogni fonte usata, annota URL e data di accesso: finiscono nella sezione Fonti della bozza ICP.
 
 ### Step 3 — Popola context/
 
@@ -40,16 +43,26 @@ Crea o aggiorna questi file con i dati trovati:
 - Team size e fondatori
 - Stage e funding (se disponibile)
 
-**`clients/[nome]/clients/[nome]/context/icp-definition.md`** (prima bozza):
-- Da job posting e clienti citati, ipotizza chi è il loro ICP
-- Settore, dimensione azienda, ruolo decisore
-- Nota esplicitamente che è una bozza da validare in kick-off
+**`clients/[nome]/context/icp-definition.md`** (prima bozza, outside-in):
 
-**`clients/[nome]/clients/[nome]/context/competitor-radar.md`** (prima bozza):
+Apri con un TLDR di 3 righe, una confidenza da 1 a 5 e un avviso fisso: *"Bozza da evidenze pubbliche. I clienti in vetrina sono quelli che l'azienda sceglie di mostrare, non per forza quelli che comprano meglio. Da validare in kick-off e con gtm-icp-definition."*
+
+Poi:
+1. **Tabella evidenze clienti**: una riga per cliente citato pubblicamente. Colonne: azienda, settore, dimensione, regione, ruolo della persona citata, problema descritto, risultato riportato, tool menzionati, fonte (URL).
+2. **Normalizzazione**: metti dimensione, settore e regione in fasce coerenti (es. 1-10 / 11-50 / 51-200 / 201-1000 / 1000+ dipendenti), così si possono contare.
+3. **Segmenti candidati (2-4)**: con il conteggio dietro ("5 case study su 12"). Un solo logo, anche grande, non è un segmento. Integra con quello che dicono i job posting (ruoli in espansione, problemi interni) per ipotizzare il ruolo decisore.
+4. **Proof point**: clienti con risultato riportato e URL.
+5. **Voice of customer pubblica**: frasi testuali da testimonial e recensioni, attribuite al ruolo, mai parafrasate. Segnala che sono testi già revisionati dal marketing: la VoC vera arriva da interviste e call.
+6. **Data gaps**: cosa manca e cosa lo colmerebbe (lista clienti, churn, interviste, export CRM). Diventa l'agenda dati del kick-off.
+7. **Fonti**: URL e data di accesso.
+
+Regole: niente nomi di clienti inventati, niente citazioni composte unendo più frasi. Se il campione è piccolo, dillo una volta nella confidenza, non in ogni sezione.
+
+**`clients/[nome]/context/competitor-radar.md`** (prima bozza):
 - Competitor menzionati sul sito o su G2
 - Come si posizionano rispetto a loro (se visibile)
 
-**`clients/[nome]/clients/[nome]/context/positioning.md`** (prima bozza):
+**`clients/[nome]/context/positioning.md`** (prima bozza):
 - Headline del sito → che problema risolvono?
 - CTA principale → a chi si rivolgono?
 - Linguaggio usato → tecnico? business? consumer?
